@@ -18,14 +18,13 @@
     <nav class="main-nav">
       <a class="logo" href="index.html">
         <picture>
-          <source width="70" type="image/png" media="(min-width: 1440px)" srcset="images/logo-pic-desktop@1x.png 1x, images/logo-pic-desktop@2x.png 2x">
-          <source width="60" type="image/png" media="(min-width: 768px)" srcset="images/logo-pic-tablet@1x.png 1x, images/logo-pic-tablet@2x.png 2x">
-          <img class="logo__logo-image" src="images/logo-pic-mobile@1x.png" srcset="images/logo-pic-mobile@2x.png 2x" alt="Логотип Котик" width="33" height="38">
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
+          <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
         </picture>
         <picture>
-          <source width="118" type="image/png" media="(min-width: 1440px)" srcset="images/logo-text-desktop@1x.png 1x, images/logo-text-desktop@2x.png 2x">
-          <source width="101" type="image/png" media="(min-width: 768px)" srcset="images/logo-text-tablet@1x.png 1x, images/logo-text-tablet@2x.png 2x">
-          <img class="logo__logo-image" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" alt="Логотип Заголовок" width="101" height="18">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
+          <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
         </picture>
 
       </a>
@@ -56,8 +55,8 @@
       <h1 class="promo__main-header">Функциональное питание для котиков</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
-        <source width="552" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-        <source width="709" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
         <img class="promo__promo-image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Промо фото продукции" width="280" height="270">
       </picture>
 
@@ -134,12 +133,12 @@
       </span>
       <div class="cat-slider">
         <picture>
-          <source width="560" type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x">
-          <img class="cat-slider__image" src="images/state-after-mobile@1x.jpg" srcset="images/state-after-mobile@2x.jpg 2x" alt="Фото котика до функционального питания" width="280" height="256">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x">
+          <img class="cat-slider__image" src="images/state-after-mobile@1x.png" srcset="images/state-after-mobile@2x.png 2x" alt="Фото котика до функционального питания" width="280" height="256">
         </picture>
         <picture>
-          <source width="560" type="image/png" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.png 1x, images/state-before-tablet@2x.png 2x">
-          <img class="cat-slider__image" src="images/state-before-mobile@1x.jpg" srcset="images/state-before-mobile@2x.jpg 2x" alt="Фото котика на функциональном питании" width="280" height="256">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.png 1x, images/state-before-tablet@2x.png 2x">
+          <img class="cat-slider__image" src="images/state-before-mobile@1x.png" srcset="images/state-before-mobile@2x.png 2x" alt="Фото котика на функциональном питании" width="280" height="256">
         </picture>
         <div class="cat-slider__control"></div>
       </div>
@@ -153,17 +152,18 @@
           Конюшенная, д. 19/8</span>
         <span>Санкт-Петербург</span>
       </div>
-
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+        <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+      </picture>
     </section>
     <section class="social">
       <h2 class="visually-hidden">
         Мы в сети
       </h2>
       <a class="main-footer__logo" href="#">
-        <picture>
-          <img class="main-footer__logo-image" src="images/footer-logo@1x.png" srcset="images/footer-logo@2x.png 2x" alt="Логотип Заголовок" width="128" height="24">
-        </picture>
-
+        <img class="main-footer__logo-image" src="images/footer-logo.svg" alt="Логотип Заголовок" width="128" height="24">
       </a>
       <ul class="main-footer__list">
         <li class="main-footer__item">
