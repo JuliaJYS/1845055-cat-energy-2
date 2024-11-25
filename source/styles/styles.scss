@@ -1,7 +1,9 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
 
 /* BLOCKS */
 @import "./blocks/header.scss";
@@ -28,7 +30,7 @@
 @import "./blocks/academy.scss";
 
 
-body {
-  $bg-color: darkorange;
-  background-color: $bg-color;
-}
+// body {
+//   $bg-color: darkorange;
+//   background-color: $bg-color;
+// }

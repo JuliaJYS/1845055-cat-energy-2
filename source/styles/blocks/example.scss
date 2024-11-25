@@ -1,0 +1,41 @@
+.example__subheader {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.example__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.example__item-text {
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.example__item-text-second {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special-dark-grey;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-black;
+  letter-spacing: 0;
+  text-align: center;
+}
