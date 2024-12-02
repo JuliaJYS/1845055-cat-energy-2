@@ -1,5 +1,4 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-body {
-  font-family: "Oswald", sans-serif;
-  color: $basic-black;
+.visually-hidden {
+  visibility: hidden;
 }
