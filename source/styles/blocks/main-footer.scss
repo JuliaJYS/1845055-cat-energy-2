@@ -1,3 +1,15 @@
 .main-footer {
   background-color: $basic-white;
 }
+
+.main-footer__link--vk {
+  background-image: url("../../icons/stack.svg#vkontakte");
+}
+
+.main-footer__link--youtube {
+  background-image: url("../../icons/stack.svg#youtube");
+}
+
+.main-footer__link--telegram {
+  background-image: url("../../icons/stack.svg#telegram");
+}
