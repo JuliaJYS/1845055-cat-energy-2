@@ -1,3 +1,28 @@
 .main-footer {
   background-color: $basic-white;
 }
+
+.main-footer__link {
+  background-color: $special-dark-grey;
+  width: 28px;
+  height: 22px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+}
+
+
+.main-footer__link--vk {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+}
+
+.main-footer__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.main-footer__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+}
