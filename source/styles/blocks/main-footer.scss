@@ -2,14 +2,27 @@
   background-color: $basic-white;
 }
 
+.main-footer__link {
+  background-color: $special-dark-grey;
+  width: 28px;
+  height: 22px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+}
+
+
 .main-footer__link--vk {
-  background-image: url("../../icons/stack.svg#vkontakte");
+  mask-image: url("../../icons/stack.svg#vkontakte");
 }
 
 .main-footer__link--youtube {
-  background-image: url("../../icons/stack.svg#youtube");
+  mask-image: url("../../icons/stack.svg#youtube");
 }
 
 .main-footer__link--telegram {
-  background-image: url("../../icons/stack.svg#telegram");
+  mask-image: url("../../icons/stack.svg#telegram");
 }

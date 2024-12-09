@@ -7,13 +7,56 @@
   font-weight: 400;
 }
 
-.functions__description {
+.functions__item {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: left;
+  padding-left: 100px;
+  position: relative;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    background-color: $basic-green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.functions__item--leaf {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_leaf");
+  }
+}
+
+.functions__item--vector {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_vector");
+  }
+}
+
+.functions__item--eat {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_eat");
+  }
+}
+
+.functions__item--clock {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon_clock");
+  }
 }
 
 .functions__item-image {
