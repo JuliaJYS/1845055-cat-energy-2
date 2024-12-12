@@ -2,6 +2,10 @@
   background-color: $basic-white;
 }
 
+.main-footer__list {
+  @include list-reset();
+}
+
 .main-footer__link {
   background-color: $special-dark-grey;
   width: 28px;

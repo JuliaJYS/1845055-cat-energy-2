@@ -1,10 +1,10 @@
 .academy {
   text-decoration: none;
-  // background-color: $special-dark-grey;
-  // mask-image: url("../../icons/stack.svg#logo-html");
-  // mask-repeat: no-repeat;
-  // mask-position: right;
-  // mask-size: 27px 34px;
+  color: $special-dark-grey;
+
+  &:hover {
+    color: $basic-green;
+  }
 }
 
 .academy__text {
@@ -14,15 +14,4 @@
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: left;
-
-
-  &:hover {
-    color: $basic-green;
-  }
-}
-
-.academy__logo {
-  &:hover {
-    fill: $basic-green;
-  }
 }

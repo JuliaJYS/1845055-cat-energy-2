@@ -1,7 +1,5 @@
 .site-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list-reset();
 }
 
 .site-list__item {
