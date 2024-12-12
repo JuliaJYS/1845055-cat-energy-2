@@ -1,3 +1,10 @@
+.promo,
+ .promo picture {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .promo__main-header {
   font-size: 36px;
   line-height: 36px;
@@ -13,4 +20,10 @@
   color: $basic-white;
   text-align: center;
   letter-spacing: 0;
+}
+
+.promo__promo-image {
+  @media screen and (min-width: $tablet-width) {
+    order: 4;
+  }
 }

@@ -16,21 +16,22 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="logo" href="index.html">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
-          <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
-        </picture>
-        <picture>
-          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
-          <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
-        </picture>
-
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-nav__header">
+        <a class="logo" href="index.html">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
+            <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
+          </picture>
+          <picture>
+            <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
+            <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -116,20 +117,23 @@
       <header class="example__header">
         <h2 class="example__subheader">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+
       </header>
-      <ul class="example__list site-list">
-        <li class="example__item">
-          <span class="example__item-text">5 кг</span>
-          <span class="example__item-text-second">снижение веса</span>
-        </li>
-        <li class="example__item">
-          <span class="example__item-text">60 дней</span>
-          <span class="example__item-text-second">затрачено время</span>
-        </li>
-      </ul>
-      <span class="example__text">
-        Затраты на питание: 15 000 РУБ.
-      </span>
+      <div class="example__wrapper">
+        <ul class="example__list site-list">
+          <li class="example__item">
+            <span class="example__item-text">5 кг</span>
+            <span class="example__item-text-second">снижение веса</span>
+          </li>
+          <li class="example__item">
+            <span class="example__item-text">60 дней</span>
+            <span class="example__item-text-second">затрачено время</span>
+          </li>
+        </ul>
+        <span class="example__text">
+          Затраты на питание: 15 000 РУБ.
+        </span>
+      </div>
       <div class="cat-slider">
         <picture>
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x">

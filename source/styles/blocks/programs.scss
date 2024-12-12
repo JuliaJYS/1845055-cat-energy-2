@@ -1,6 +1,12 @@
 .programs__list {
   @include list-reset();
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .programs__item {
