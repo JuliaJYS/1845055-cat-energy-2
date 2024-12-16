@@ -1,3 +1,4 @@
+
 .catalog__header {
   font-size: 36px;
   line-height: 36px;
@@ -5,4 +6,21 @@
   letter-spacing: 0;
   text-align: left;
   font-weight: 400;
+}
+
+.catalog__list {
+  @include list-reset();
+  display: grid;
+
+  @media screen and (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.catalog__item {
+  border-top: 1px solid $basic-grey;
 }

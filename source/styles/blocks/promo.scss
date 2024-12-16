@@ -1,7 +1,10 @@
-.promo,
- .promo picture {
+.promo {
   display: flex;
   flex-direction: column;
+  background-image: url("../../images/index-background-mobile@1x.png");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 
@@ -20,6 +23,11 @@
   color: $basic-white;
   text-align: center;
   letter-spacing: 0;
+}
+
+.promo__picture {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__promo-image {

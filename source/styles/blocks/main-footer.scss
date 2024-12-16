@@ -4,14 +4,18 @@
 
 .main-footer__list {
   @include list-reset();
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main-footer__link {
   background-color: $special-dark-grey;
   width: 28px;
   height: 22px;
-  mask-position: center;
+  // mask-position: center;
   mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 
   &:hover {
     background-color: $basic-green;

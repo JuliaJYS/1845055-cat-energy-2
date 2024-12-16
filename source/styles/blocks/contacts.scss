@@ -1,3 +1,8 @@
+.contacts__main {
+  display: flex;
+  flex-direction: row;
+}
+
 .contacts__header {
   font-size: 16px;
   line-height: 20px;
@@ -6,6 +11,12 @@
   text-align: left;
   text-transform: uppercase;
   font-weight: 400;
+  // width: min-content;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__address-text {

@@ -1,4 +1,23 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+* {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   visibility: hidden;
+}
+
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

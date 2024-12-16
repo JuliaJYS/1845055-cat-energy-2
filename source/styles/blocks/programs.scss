@@ -1,8 +1,8 @@
 .programs__list {
   @include list-reset();
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   @media screen and (min-width: $desktop-width) {
     flex-direction: row;

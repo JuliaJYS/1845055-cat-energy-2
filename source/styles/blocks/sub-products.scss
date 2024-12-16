@@ -1,3 +1,15 @@
+.sub-products__list {
+  @include list-reset();
+}
+
+.sub-products__item {
+  display: grid;
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .sub-products__item-title {
   font-size: 20px;
   line-height: 20px;

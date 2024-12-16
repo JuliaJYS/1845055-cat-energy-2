@@ -1,6 +1,10 @@
 .academy {
   text-decoration: none;
   color: $special-dark-grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   &:hover {
     color: $basic-green;
