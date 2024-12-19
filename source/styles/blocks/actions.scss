@@ -5,3 +5,9 @@
   letter-spacing: 0;
   text-align: center;
 }
+
+.actions__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

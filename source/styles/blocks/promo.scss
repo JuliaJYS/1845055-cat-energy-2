@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../images/index-background-mobile@1x.png");
-  background-size: 320px 302px;
+  background-size: cover; /* 320px 302px; */
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50% 0;
 }
 
 

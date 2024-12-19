@@ -55,40 +55,41 @@
   </header>
   <main class="main-container">
     <section class="catalog">
-      <h1 class="catalog__header">Каталог продукции</h1>
+      <h1 class="catalog__header wrapper">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
           <a class="card__item-link link" href="#">
-            <h3 class="card__item-title">
-              Cat Energy
-              PRO
-              500 г
-            </h3>
-          </a>
-          <a class="card__item-link link" href="#">
-            <picture>
+            <picture class="card__image">
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/pro500-desktop@1x.png 1x, images/pro500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/pro500-tablet@1x.png 1x, images/pro500-tablet@2x.png 2x">
               <img class="card__image" src="images/pro500-mobile@1x.png" srcset="images/pro500-mobile@2x.png 2x" alt="Cat Energy Pro" width="140" height="107">
             </picture>
           </a>
-          <table class="card__table">
-            <tbody class="card__table-body">
-              <tr class="card__table-row">
-                <th class="card__table-cell">Масса</th>
-                <td class="card__table-cell">500 г</td>
-              </tr>
-              <tr class="card__table-row">
-                <th class="card__table-cell">Вкус</th>
-                <td class="card__table-cell">Курица</td>
-              </tr>
-              <tr class="card__table-row">
-                <th class="card__table-cell">Цена</th>
-                <td class="card__table-cell">700 ₽</td>
-              </tr>
-            </tbody>
-          </table>
-
+          <div class="card__content">
+            <h3 class="card__item-title">
+              <a class="card__item-link link" href="#">
+                Cat Energy
+                PRO
+                500 г
+              </a>
+            </h3>
+            <table class="card__table">
+              <tbody class="card__table-body">
+                <tr class="card__table-row">
+                  <th class="card__table-cell">Масса</th>
+                  <td class="card__table-cell">500 г</td>
+                </tr>
+                <tr class="card__table-row">
+                  <th class="card__table-cell">Вкус</th>
+                  <td class="card__table-cell">Курица</td>
+                </tr>
+                <tr class="card__table-row">
+                  <th class="card__table-cell">Цена</th>
+                  <td class="card__table-cell">700 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <a class="button" href="#">
             Заказать
           </a>
@@ -370,7 +371,7 @@
     <section class="actions wrapper">
       <h2 class="actions__header catalog-subheader">Акции и новинки</h2>
       <p class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
+      <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="subscribe-email"></label>
         <input name="subscribe-email" id="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
         <button class="button button--third" type="submit">

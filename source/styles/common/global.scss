@@ -5,19 +5,25 @@
 
 .visually-hidden {
   visibility: hidden;
+  margin: 0;
+  height: 0;
 }
 
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+  width: 340px;
 
   @media screen and (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    width: 768px;
   }
 
   @media screen and (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1440px;
   }
 }
