@@ -15,8 +15,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav wrapper">
-      <div class="main-nav__header">
+    <nav class="main-nav">
+      <div class="main-nav__header wrapper">
         <a class="logo" href="index.html">
           <picture>
             <source width="70" height="59" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-pic-desktop.svg">
@@ -28,24 +28,24 @@
             <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__item-link main-nav__item-link--active" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__item-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__item-link" href="#">
               Подбор программы
             </a>
           </li>
@@ -60,7 +60,7 @@
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
         <img class="promo__promo-image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Промо фото продукции" width="280" height="270">
       </picture>
-      <a class="button wrapper" href="#">
+      <a class="promo__button button wrapper" href="#">
         Подобрать программу
       </a>
     </section>

@@ -1,4 +1,13 @@
 .logo {
   background-color: $basic-white;
+  width: 190px;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-width) {
+    gap: 13px;
+    width: 174px;
+  }
 }

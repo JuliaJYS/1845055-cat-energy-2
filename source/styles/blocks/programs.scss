@@ -1,3 +1,7 @@
+.programs {
+  padding-top: 20px;
+}
+
 .programs__list {
   @include list-reset();
   display: flex;
@@ -12,6 +16,10 @@
 .programs__item {
   background-color: $basic-grey;
   padding: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 77px 53px;
+  }
 }
 
 .programs__title {
@@ -19,7 +27,8 @@
   line-height: 37px;
   color: $basic-black;
   letter-spacing: 0;
-  text-align: center;
+  text-align: left;
+  padding-left: 90px;
   font-weight: 400;
   position: relative;
   text-transform: uppercase;
@@ -44,6 +53,12 @@
     left: 0;
     top: -5px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+  }
 }
 
 .programs__title--second {
@@ -64,15 +79,29 @@
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: left;
+  margin: 0 0 23px;
+  padding: 30px 0 23px;
 }
 
 .programs__link {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
+  text-transform: uppercase;
   color: $basic-black;
   letter-spacing: 0;
   text-align: center;
   position: relative;
+  background-color: $basic-grey;
+  padding: 15px 0;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid $basic-grey-2;
+    width: 240px;
+    top: 0;
+  }
 
   &::after {
     content: "";
@@ -80,5 +109,16 @@
     background-image: url("../../icons/stack.svg#arrow-right");
     width: 32px;
     height: 10px;
+    top: 40%;
+    left: 125%;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &::before {
+      border-top: none;
+    }
   }
 }

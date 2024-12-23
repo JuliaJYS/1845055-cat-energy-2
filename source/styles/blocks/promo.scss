@@ -2,36 +2,116 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../images/index-background-mobile@1x.png");
-  background-size: cover; /* 320px 302px; */
+  background-size: 320px 302px;
   background-repeat: no-repeat;
   background-position: 50% 0;
+  padding-top: 27px;
+  // gap: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    opacity: 0.7;
+    width: 320px;
+    height: 302px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    background-image: none;
+    padding-top: 65px;
+    height: 910px;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 560px;
+  }
 }
 
 
 .promo__main-header {
+  z-index: 1;
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
   text-align: center;
   letter-spacing: 0;
   font-weight: 400;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    color: $basic-black;
+    line-height: 60px;
+    width: 416px;
+    margin: 0 0 0 120px;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 .promo__slogan {
+  z-index: 1;
   font-size: 14px;
   line-height: 14px;
   color: $basic-white;
   text-align: center;
   letter-spacing: 0;
+  margin-top: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 40px 0 0 120px;
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-black;
+  }
 }
 
 .promo__picture {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    order: 4;
+    position: absolute;
+    top: 26%;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 0;
+    left: 35%;
+  }
 }
 
 .promo__promo-image {
+  z-index: 1;
+  margin-top: 25px;
+}
+
+.promo__button {
+  height: 40px;
+  padding: 10px 0;
+  text-transform: uppercase;
+
   @media screen and (min-width: $tablet-width) {
-    order: 4;
+    margin: 50px 0 0 120px;
+    width: 242px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+    z-index: 2;
   }
 }
