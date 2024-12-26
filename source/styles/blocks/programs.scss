@@ -2,6 +2,10 @@
   padding-top: 20px;
 }
 
+.programs_wrapper {
+  max-width: 100%;
+}
+
 .programs__list {
   @include list-reset();
   display: flex;
@@ -58,6 +62,18 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
+
+    &::before {
+      left: 72%;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      width: 141px;
+      height: 194px;
+      left: 80%;
+    }
   }
 }
 
@@ -70,6 +86,15 @@
     height: 53px;
     left: -10px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    &::after {
+      width: 269px;
+      height: 113px;
+      left: 60%;
+      top: 150%;
+    }
+  }
 }
 
 .programs__description {
@@ -81,6 +106,10 @@
   text-align: left;
   margin: 0 0 23px;
   padding: 30px 0 23px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 340px;
+  }
 }
 
 .programs__link {

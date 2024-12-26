@@ -67,6 +67,7 @@
   text-align: center;
   letter-spacing: 0;
   margin-top: 25px;
+  width: fit-content;
 
   @media screen and (min-width: $tablet-width) {
     margin: 40px 0 0 120px;
@@ -97,6 +98,8 @@
 
 .promo__promo-image {
   z-index: 1;
+
+  margin: 0 auto;
   margin-top: 25px;
 }
 
@@ -104,6 +107,8 @@
   height: 40px;
   padding: 10px 0;
   text-transform: uppercase;
+  margin: 0 20px;
+  width: 280px;
 
   @media screen and (min-width: $tablet-width) {
     margin: 50px 0 0 120px;
