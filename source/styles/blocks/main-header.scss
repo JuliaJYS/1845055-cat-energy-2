@@ -2,22 +2,25 @@
   background-color: $basic-white;
 
   @media screen and (min-width: $desktop-width) {
-    background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
-    background-image: url("../../images/index-background-desktop@1x.png");
-    background-position: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: 720px 694px;
+    // background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
+    // background-image: url("../../images/index-background-desktop@1x.png");
+    // background-position: 100%;
+    // background-repeat: no-repeat;
+    // position: relative;
+    // background-size: 720px 694px;
 
-    &::before {
-      content: "";
-      opacity: 0.7;
-      background-color: #68b738;
-      height: 692px;
-      width: 721px;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+    // &::before {
+    //   content: "";
+    //   opacity: 0.7;
+    //   background-color: #68b738;
+    //   height: 692px;
+    //   width: 721px;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    // }
+    background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png");
+    background-position: center, calc(50% + 360px) center;
+    background-repeat: no-repeat;
   }
 }

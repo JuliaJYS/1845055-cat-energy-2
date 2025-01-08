@@ -1,3 +1,8 @@
 .cat-slider {
-  background-color: $basic-white;
+  // background-color: $basic-white;
+  @media screen and (min-width: $desktop-width) {
+    grid-row: 1/-3;
+    grid-column: 2;
+    width: 560px;
+  }
 }

@@ -1,11 +1,22 @@
 .button {
+  // font-size: 16px;
+  // line-height: 20px;
+  color: $basic-white;
+  // letter-spacing: 0;
+  // text-align: center;
+  background-color: $basic-green;
+  // text-decoration: none;
+
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  padding: 11px 10px;
   font-size: 16px;
   line-height: 20px;
-  color: $basic-white;
-  letter-spacing: 0;
   text-align: center;
-  background-color: $basic-green;
+  text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button--second {

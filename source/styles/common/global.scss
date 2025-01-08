@@ -1,11 +1,12 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 * {
   box-sizing: border-box;
-  outline: 2px solid rgba(255, 0, 0, 0.8);
+  // outline: 2px solid rgba(255, 0, 0, 0.8);
 }
 
 .visually-hidden {
   visibility: hidden;
+  font-size: 0;
   margin: 0;
   height: 0;
 }
@@ -15,7 +16,6 @@
   padding-right: 20px;
   margin: 0 auto;
   width: 320px;
-  max-width: 90%;
 
   @media screen and (min-width: $tablet-width) {
     padding-left: 30px;

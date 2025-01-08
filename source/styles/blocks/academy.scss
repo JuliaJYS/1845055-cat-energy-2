@@ -9,6 +9,10 @@
   &:hover {
     color: $basic-green;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    gap: 23px;
+  }
 }
 
 .academy__text {

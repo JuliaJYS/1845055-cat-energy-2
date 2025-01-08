@@ -3,20 +3,33 @@
   line-height: 40px;
   color: $basic-black;
   letter-spacing: 0;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
+  margin: 0;
+  padding-top: 20px;
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 70px;
+  }
 }
 
 .functions__list {
   @include list-reset();
+  padding: 40px 0;
+  display: grid;
+  gap: 20px;
+  counter-reset: verse 0;
 
   @media screen and (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 37px 156px;
   }
 
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 37px 94px;
   }
 }
 
@@ -27,9 +40,11 @@
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: left;
-  padding-left: 100px;
+  padding-left: 80px;
   position: relative;
   min-height: 60px;
+  counter-increment: verse;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -41,6 +56,37 @@
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-top: 150px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 80px;
+
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &::after {
+      content: counter(verse);
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      top: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 

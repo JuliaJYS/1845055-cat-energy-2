@@ -2,14 +2,30 @@
   background-color: $basic-white;
 }
 
+.main-footer__logo {
+  text-align: center;
+}
+
 .main-footer__list {
   @include list-reset();
-  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  border-top: 1px solid $special-grey-2;
+  border-bottom: 1px solid $special-grey-2;
+  gap: 24px;
+
+  @media screen and (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-footer__link {
+  display: block;
   background-color: $special-dark-grey;
   width: 28px;
   height: 22px;

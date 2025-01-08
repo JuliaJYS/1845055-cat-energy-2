@@ -9,11 +9,14 @@
 .programs__list {
   @include list-reset();
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 20px;
+  flex-wrap: wrap;
+
 
   @media screen and (min-width: $desktop-width) {
     flex-direction: row;
+    gap: 20px 80px;
   }
 }
 
@@ -64,7 +67,7 @@
     padding-left: 0;
 
     &::before {
-      left: 72%;
+      left: 69%;
       width: 200px;
       height: 200px;
     }
@@ -72,7 +75,26 @@
     &::after {
       width: 141px;
       height: 194px;
-      left: 80%;
+      left: 74%;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: center;
+    padding-bottom: 70px;
+
+    &::before {
+      left: 0;
+      top: -25%;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      width: 70px;
+      height: 97px;
+      left: 20px;
+      top: -32px;
     }
   }
 }
@@ -95,6 +117,15 @@
       top: 150%;
     }
   }
+
+  @media screen and (min-width: $desktop-width) {
+    &::after {
+      width: 134px;
+      height: 56px;
+      left: -30px;
+      top: 0;
+    }
+  }
 }
 
 .programs__description {
@@ -110,6 +141,11 @@
   @media screen and (min-width: $tablet-width) {
     width: 340px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 457px;
+    height: 95px;
+  }
 }
 
 .programs__link {
@@ -122,6 +158,7 @@
   position: relative;
   background-color: $basic-grey;
   padding: 15px 0;
+  text-decoration: none;
 
 
   &::before {
