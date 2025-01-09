@@ -29,14 +29,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $basic-grey-2;
+
 
   @media screen and (min-width: $tablet-width) {
     height: 75px;
     width: 174px;
     margin: 0;
     padding: 0;
-    border-bottom: none;
+
   }
 }
 
@@ -56,6 +56,14 @@
 
 .main-nav__toggle--close {
   background-image: url("../../icons/stack.svg#icon-x");
+}
+
+.main-nav__wrapper-catalog {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {

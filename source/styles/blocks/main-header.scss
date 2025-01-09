@@ -1,5 +1,10 @@
 .main-header {
   background-color: $basic-white;
+  border-bottom: 1px solid $basic-grey-2;
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 
   @media screen and (min-width: $desktop-width) {
     // background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
