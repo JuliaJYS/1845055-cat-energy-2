@@ -24,7 +24,16 @@
     //   top: 0;
     //   right: 0;
     // }
-    background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png");
+
+    // background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png");
+    // background-position: center, calc(50% + 360px) center;
+    // background-repeat: no-repeat;
+  }
+}
+
+.main-header__main-page {
+  @media screen and (min-width: $desktop-width) {
+    background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png"), linear-gradient(90deg, #3f3e41, #3f3e41);
     background-position: center, calc(50% + 360px) center;
     background-repeat: no-repeat;
   }

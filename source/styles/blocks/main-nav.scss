@@ -36,7 +36,6 @@
     width: 174px;
     margin: 0;
     padding: 0;
-
   }
 }
 
@@ -112,7 +111,9 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
 
+.main-nav__item-link--second {
   @media screen and (min-width: $desktop-width) {
     color: $basic-white;
 
@@ -127,7 +128,9 @@
     border-bottom: 2px solid $basic-green;
     padding-bottom: 10px;
   }
+}
 
+.main-nav__item-link--active-second {
   @media screen and (min-width: $desktop-width) {
     border-bottom: 2px solid $basic-white;
   }

@@ -22,6 +22,11 @@
   @media screen and (min-width: $tablet-width) {
     border: none;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .main-footer__link {

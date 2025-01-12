@@ -159,4 +159,9 @@
     padding: 16px 10px;
     width: 245px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 242px;
+    padding: 14px 0;
+  }
 }

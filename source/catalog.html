@@ -32,15 +32,15 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="main-nav__wrapper main-nav__wrapper-catalog">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="index.html">
+            <a class="main-nav__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__item-link" href="catalog.html">
+            <a class="main-nav__item-link main-nav__item-link--active" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -335,68 +335,71 @@
     </section>
     <section class="sub-products wrapper">
       <h2 class="sub-products__header catalog-subheader">Дополнительные товары</h2>
-      <ul class="sub-products__list">
-        <li class="sub-products__item">
-          <h3 class="sub-products__item-title">Сахарозаменитель</h3>
-          <div class="sub-products__item-property">
-            <span class="sub-products__text">1 упаковка (100 г)</span>
-            <span class="sub-products__text">200 ₽</span>
-          </div>
-          <a class="sub-products__button button" href="#">
-            Заказать
-          </a>
-        </li>
-        <li class="sub-products__item">
-          <h3 class="sub-products__item-title">Питьевая вода</h3>
-          <div class="sub-products__item-property">
-            <span class="sub-products__text">5 литров</span>
-            <span class="sub-products__text">50 ₽</span>
-          </div>
-          <a class="sub-products__button button" href="#">
-            Заказать
-          </a>
-        </li>
-        <li class="sub-products__item">
-          <h3 class="sub-products__item-title">Молоко</h3>
-          <div class="sub-products__item-property">
-            <span class="sub-products__text">1 литр</span>
-            <span class="sub-products__text">100 ₽</span>
-          </div>
-          <a class="sub-products__button button" href="#">
-            Заказать
-          </a>
-        </li>
-        <li class="sub-products__item">
-          <h3 class="sub-products__item-title">Витамины</h3>
-          <div class="sub-products__item-property">
-            <span class="sub-products__text">1 упаковка (30 г)</span>
-            <span class="sub-products__text">300 ₽</span>
-          </div>
-          <a class="sub-products__button button" href="#">
-            Заказать
-          </a>
-        </li>
-      </ul>
-      <div class="sub-products__actions">
-        <span class="sub-products__actions-description">Закажите все
-          и получите чехол для
-          кота в подарок!</span>
+      <div class="sub-products__content">
+        <ul class="sub-products__list">
+          <li class="sub-products__item">
+            <h3 class="sub-products__item-title">Сахарозаменитель</h3>
+            <div class="sub-products__item-property">
+              <span class="sub-products__text">1 упаковка (100 г)</span>
+              <span class="sub-products__text">200 ₽</span>
+            </div>
+            <a class="sub-products__button button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="sub-products__item">
+            <h3 class="sub-products__item-title">Питьевая вода</h3>
+            <div class="sub-products__item-property">
+              <span class="sub-products__text">5 литров</span>
+              <span class="sub-products__text">50 ₽</span>
+            </div>
+            <a class="sub-products__button button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="sub-products__item">
+            <h3 class="sub-products__item-title">Молоко</h3>
+            <div class="sub-products__item-property">
+              <span class="sub-products__text">1 литр</span>
+              <span class="sub-products__text">100 ₽</span>
+            </div>
+            <a class="sub-products__button button" href="#">
+              Заказать
+            </a>
+          </li>
+          <li class="sub-products__item">
+            <h3 class="sub-products__item-title">Витамины</h3>
+            <div class="sub-products__item-property">
+              <span class="sub-products__text">1 упаковка (30 г)</span>
+              <span class="sub-products__text">300 ₽</span>
+            </div>
+            <a class="sub-products__button button" href="#">
+              Заказать
+            </a>
+          </li>
+        </ul>
+        <div class="sub-products__actions">
+          <span class="sub-products__actions-description">Закажите все
+            и получите чехол для
+            кота в подарок!</span>
+        </div>
       </div>
     </section>
     <section class="actions wrapper">
       <h2 class="actions__header catalog-subheader">Акции и новинки</h2>
-      <p class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <span class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</span>
       <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="subscribe-email"></label>
-        <input name="subscribe-email" id="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
-        <button class="button button--third" type="submit">
+        <label class="actions__label">
+          <input class="actions__input" name="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
+        </label>
+        <button class="actions__button button button--third" type="submit">
           Подписаться
         </button>
       </form>
     </section>
   </main>
-  <footer class="main-footer">
-    <section class="contacts">
+  <footer class="main-footer ">
+    <section class="contacts contacts--second">
       <div class="wrapper">
         <div class="contacts__main">
           <h3 class="contacts__header">приглашаем <br>к сотрудничеству дилеров!</h3>

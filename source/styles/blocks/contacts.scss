@@ -4,6 +4,14 @@
   }
 }
 
+.contacts--second {
+  background-color: $basic-grey;
+
+  @media screen and (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
 .contacts__main {
   display: flex;
   flex-direction: row;

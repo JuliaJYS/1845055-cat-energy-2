@@ -1,13 +1,86 @@
+.actions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+.actions__header {
+  margin: 0;
+}
+
 .actions__description {
   font-size: 16px;
   line-height: 24px;
   color: $basic-black;
   letter-spacing: 0;
   text-align: center;
+  display: block;
+  margin: 32px 0 24px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 66px 85px 68px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 72px 85px 24px;
+  }
 }
 
 .actions__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 234px;
+  }
+}
+
+.actions__label {
+  @media screen and (min-width: $tablet-width) {
+    width: 70%;
+  }
+}
+
+.actions__input {
+  border: 1px solid $special-grey;
+  height: 56px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  width: 100%;
+  padding: 13px;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+    width: 100%;
+  }
+}
+
+.actions__button {
+  @media screen and (min-width: $tablet-width) {
+    width: 30%;
+  }
 }
