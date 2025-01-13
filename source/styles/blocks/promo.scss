@@ -26,7 +26,7 @@
   padding-bottom: 10px;
   color: #ffffff;
   text-align: center;
-  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.4%, #ffffff 62.4%), url("../../images/index-background-mobile@1x.png");
+  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.4%, #ffffff 62.4%), url("../../images/index-background-mobile@1x.png"), linear-gradient(90deg, #424146, #424146);
   background-size: 100%, 320px 315px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 
 .promo__button {
   // height: 40px;
-  padding: 0;
+  padding: 10px;
   // text-transform: uppercase;
   margin: 0;
   // width: 280px;

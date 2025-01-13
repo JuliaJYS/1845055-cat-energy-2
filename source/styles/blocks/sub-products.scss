@@ -1,3 +1,7 @@
+.sub-products {
+  overflow-x: hidden;
+}
+
 .sub-products__header {
   position: relative;
   margin: 25px 0 36px;
@@ -5,10 +9,19 @@
   &::after {
     content: "";
     border-bottom: 2px solid #68b738;
-    width: 35px;
+    width: 100vw;
     position: absolute;
     top: 50%;
-    left: 95%;
+    left: calc(100% - 40px);
+  }
+
+  &::before {
+    content: "";
+    border-bottom: 2px solid #68b738;
+    width: 100vw;
+    position: absolute;
+    right: calc(100% + 0px);
+    top: 50%;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -18,18 +31,9 @@
     width: 385px;
     padding: 0 40px;
 
-    &::after {
-      width: 358px;
-    }
-
-    &::before {
-      content: "";
-      border-bottom: 2px solid #68b738;
-      width: 30px;
-      position: absolute;
-      left: -30px;
-      top: 50%;
-    }
+    // &::after {
+    //   // width: 358px;
+    // }
   }
 }
 
