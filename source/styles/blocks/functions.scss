@@ -6,7 +6,7 @@
   text-align: left;
   font-weight: 400;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 18px;
 
   @media screen and (min-width: $desktop-width) {
     font-size: 60px;
@@ -17,7 +17,7 @@
 
 .functions__list {
   @include list-reset();
-  padding: 40px 0;
+  padding: 42px 0 48px;
   display: grid;
   gap: 20px;
   counter-reset: verse 0;
@@ -53,6 +53,7 @@
     height: 60px;
     position: absolute;
     left: 0;
+    top: -2px;
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;

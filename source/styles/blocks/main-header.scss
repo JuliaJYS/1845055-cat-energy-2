@@ -1,6 +1,5 @@
 .main-header {
   background-color: $basic-white;
-  border-bottom: 1px solid $basic-grey-2;
 
   @media screen and (min-width: $tablet-width) {
     border-bottom: none;
@@ -33,7 +32,7 @@
 
 .main-header--first {
   @media screen and (min-width: $desktop-width) {
-    background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png"), linear-gradient(90deg, #3f3e41, #3f3e41);
+    background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png"), linear-gradient(90deg, $basic-white 50%, #3f3e41 50%);
     background-position: center, calc(50% + 360px) center;
     background-repeat: no-repeat;
   }

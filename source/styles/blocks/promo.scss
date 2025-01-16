@@ -22,12 +22,12 @@
   // }
 
   position: relative;
-  padding-top: 3px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 1px;
   color: #ffffff;
   text-align: center;
   background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.4%, #ffffff 62.4%), url("../../images/index-background-mobile@1x.png"), linear-gradient(90deg, #424146, #424146);
-  background-size: 100%, 320px 315px;
+  background-size: 100%, 320px 320px;
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -136,7 +136,7 @@
 .promo__promo-image {
   z-index: 1;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .promo__button {

@@ -2,19 +2,19 @@
   background-color: $basic-grey;
 
   @media screen and (min-width: $tablet-width) {
-    background-image: linear-gradient(180deg, $basic-white 50%, $basic-grey 50%);
+    background-image: linear-gradient(180deg, $basic-white 651px, $basic-grey 651px);
     border-top: 1px solid $basic-grey-2;
   }
 
   @media screen and (min-width: $desktop-width) {
-    background-image: linear-gradient(180deg, $basic-white 25%, 35px, $basic-grey);
+    background-image: linear-gradient(180deg, $basic-white 195px, $basic-grey 195px);
     border-top: none;
   }
 }
 
 .example__content {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 45px;
@@ -62,7 +62,7 @@
   letter-spacing: 0;
   text-align: left;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   @media screen and (min-width: $tablet-width) {
     padding-bottom: 55px;
@@ -96,7 +96,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 
   @media screen and (min-width: $tablet-width) {
     gap: 42px;
@@ -145,21 +145,58 @@
   letter-spacing: 0;
   text-align: center;
   position: absolute;
-  top: 88%;
+  bottom: -15px;
   background-color: $basic-grey;
-  left: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 74px;
+
+  &::before {
+    content: "";
+    background-color: $basic-grey;
+    width: 10px;
+    height: 15px;
+    top: 0;
+    left: -10px;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    background-color: $basic-grey;
+    width: 10px;
+    height: 15px;
+    top: 0;
+    right: -10px;
+    position: absolute;
+  }
 
   @media screen and (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
-    width: 120px;
-    left: 13%;
+    width: max-content;
+    bottom: -7px;
+
+    &::before {
+      background-color: $basic-white;
+    }
+
+    &::after {
+      background-color: $basic-white;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
     background-color: $basic-grey;
+
+    &::before {
+      background-color: $basic-grey;
+    }
+
+    &::after {
+      background-color: $basic-grey;
+    }
   }
 }
 

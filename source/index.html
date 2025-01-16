@@ -15,22 +15,24 @@
 
 <body class="page__body">
   <header class="main-header main-header--first">
-    <nav class="main-nav wrapper">
+    <nav class="main-nav">
       <div class="main-nav__header">
-        <a class="logo" href="index.html">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-pic-desktop.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
-            <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
-          </picture>
-          <picture>
-            <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
-            <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
-          </picture>
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-nav__header-wrapper wrapper">
+          <a class="logo" href="index.html">
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-pic-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
+              <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
+            </picture>
+            <picture>
+              <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
+              <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
+            </picture>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -131,7 +133,7 @@
             </li>
             <li class="example__item">
               <span class="example__item-text">60 дней</span>
-              <span class="example__item-text-second">затрачено время</span>
+              <span class="example__item-text-second">затрачено времени</span>
             </li>
           </ul>
           <span class="example__text">
@@ -139,15 +141,17 @@
           </span>
         </div>
         <div class="cat-slider">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x">
-            <img class="cat-slider__image" src="images/state-after-mobile@1x.png" srcset="images/state-after-mobile@2x.png 2x" alt="Фото котика до функционального питания" width="280" height="256">
-          </picture>
-          <picture>
+          <picture class="cat-slider__image-item cat-slider__image-item--first">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.png 1x, images/state-before-tablet@2x.png 2x">
             <img class="cat-slider__image" src="images/state-before-mobile@1x.png" srcset="images/state-before-mobile@2x.png 2x" alt="Фото котика на функциональном питании" width="280" height="256">
           </picture>
-          <div class="cat-slider__control"></div>
+          <picture class="cat-slider__image-item cat-slider__image-item--second">
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/state-after-tablet@1x.png 1x, images/state-after-tablet@2x.png 2x">
+            <img class="cat-slider__image" src="images/state-after-mobile@1x.png" srcset="images/state-after-mobile@2x.png 2x" alt="Фото котика до функционального питания" width="280" height="256">
+          </picture>
+          <button class="cat-slider__control" type="button">
+            <span class="visually-hidden">Передвинуть ползунок слайдера</span>
+          </button>
         </div>
       </div>
 

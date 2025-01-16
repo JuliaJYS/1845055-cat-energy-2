@@ -1,5 +1,5 @@
 .programs {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .programs_wrapper {
@@ -22,7 +22,7 @@
 
 .programs__item {
   background-color: $basic-grey;
-  padding: 20px;
+  padding: 24px 20px 19px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 77px 53px;
@@ -35,7 +35,8 @@
   color: $basic-black;
   letter-spacing: 0;
   text-align: left;
-  padding-left: 90px;
+  padding-left: 70px;
+  padding-top: 6px;
   font-weight: 400;
   position: relative;
   text-transform: uppercase;
@@ -49,6 +50,7 @@
     border-radius: 100%;
     position: absolute;
     left: 0;
+    top: 0;
   }
 
   &::after {
@@ -56,9 +58,9 @@
     position: absolute;
     background-image: url("../../icons/stack.svg#cat-slim");
     width: 50px;
-    height: 53px;
+    height: 50px;
     left: 0;
-    top: -5px;
+    top: -3px;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -135,8 +137,8 @@
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: left;
-  margin: 0 0 23px;
-  padding: 30px 0 23px;
+  margin: 0 0 15px;
+  padding: 30px 0 22px;
 
   @media screen and (min-width: $tablet-width) {
     width: 340px;
@@ -173,10 +175,10 @@
     content: "";
     position: absolute;
     background-image: url("../../icons/stack.svg#arrow-right");
-    width: 32px;
-    height: 10px;
-    top: 40%;
-    left: 125%;
+    width: 35px;
+    height: 12px;
+    top: 39%;
+    left: 118%;
   }
 
   @media screen and (min-width: $tablet-width) {

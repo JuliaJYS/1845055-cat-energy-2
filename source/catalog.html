@@ -16,23 +16,26 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
-      <div class="main-nav__header wrapper">
-        <a class="logo" href="index.html">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-pic-desktop.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
-            <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
-          </picture>
-          <picture>
-            <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
-            <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
-          </picture>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="main-nav__header ">
+        <div class="main-nav__header-wrapper wrapper">
+          <a class="logo" href="index.html">
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1280px)" srcset="images/logo-pic-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg">
+              <img class="logo__logo-image" src="images/logo-pic-mobile.svg" alt="Логотип Котик" width="33" height="38">
+            </picture>
+            <picture>
+              <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg">
+              <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
+            </picture>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
       </div>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper .main-nav__wrapper-catalog">
         <ul class="main-nav__list site-list">
           <li class="main-nav__item site-list__item">
             <a class="main-nav__item-link" href="index.html">
@@ -333,9 +336,9 @@
         </li>
       </ul>
     </section>
-    <section class="sub-products wrapper">
-      <h2 class="sub-products__header catalog-subheader">Дополнительные товары</h2>
-      <div class="sub-products__content">
+    <section class="sub-products">
+      <h2 class="sub-products__header catalog-subheader wrapper">Дополнительные товары</h2>
+      <div class="sub-products__content wrapper">
         <ul class="sub-products__list">
           <li class="sub-products__item">
             <h3 class="sub-products__item-title">Сахарозаменитель</h3>
@@ -385,17 +388,22 @@
         </div>
       </div>
     </section>
-    <section class="actions wrapper">
-      <h2 class="actions__header catalog-subheader">Акции и новинки</h2>
-      <span class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</span>
-      <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="actions__label">
-          <input class="actions__input" name="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
-        </label>
-        <button class="actions__button button button--third" type="submit">
-          Подписаться
-        </button>
-      </form>
+    <section class="actions">
+      <h2 class="actions__header catalog-subheader wrapper">Акции и новинки</h2>
+      <div class="actions_content wrapper">
+        <span class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</span>
+        <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="actions__label">
+            <input class="actions__input" name="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
+          </label>
+          <button class="actions__button button button--third" type="submit">
+            Подписаться
+          </button>
+        </form>
+      </div>
+
+      </div>
+
     </section>
   </main>
   <footer class="main-footer ">
