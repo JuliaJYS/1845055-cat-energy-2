@@ -10,6 +10,15 @@
     color: $basic-green;
   }
 
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+
   @media screen and (min-width: $tablet-width) {
     gap: 23px;
   }

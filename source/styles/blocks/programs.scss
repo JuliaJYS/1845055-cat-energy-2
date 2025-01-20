@@ -162,6 +162,10 @@
   padding: 15px 0;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
 
   &::before {
     content: "";
@@ -179,6 +183,14 @@
     height: 12px;
     top: 39%;
     left: 118%;
+  }
+
+  &:hover::after {
+    background-image: url("../../icons/stack.svg#arrow-right-big");
+  }
+
+  &:active::after {
+    background-image: url("../../icons/stack.svg#arrow-right-big");
   }
 
   @media screen and (min-width: $tablet-width) {

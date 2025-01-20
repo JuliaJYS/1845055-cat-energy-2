@@ -103,7 +103,7 @@
 }
 
 .actions__input {
-  border: 1px solid $special-grey;
+  border: 1px solid $basic-grey-3;
   height: 56px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -112,6 +112,15 @@
   color: $special-dark-grey;
   width: 100%;
   padding: 13px;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus-visible {
+    outline: 0 solid $basic-white;
+    border: 1px solid $special-dark-grey;
+  }
 
   &::placeholder {
     font-family: "Oswald", sans-serif;

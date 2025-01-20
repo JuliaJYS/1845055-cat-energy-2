@@ -55,6 +55,33 @@
   transform: translateX(-50%);
   z-index: 2;
 
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:hover::before {
+    border: 2px solid $basic-green;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: #9ecc82; //$basic-green-2;
+    // opacity: 0.6;
+  }
+
+  &:active::before {
+    border: 2px solid #9ecc82;
+    // opacity: 0.6;
+  }
+
+  &:active::after {
+    background-color: #9ecc82;//$basic-green-2;
+    // opacity: 0.6;
+  }
+
   &::before {
     content: "";
     background-color: $basic-white;
