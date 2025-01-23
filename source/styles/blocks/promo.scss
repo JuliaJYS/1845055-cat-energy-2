@@ -81,6 +81,7 @@
     // padding: 0;
     position: relative;
     z-index: 5;
+    margin-top: 40px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -116,7 +117,7 @@
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 18px;
     transform: translateX(-50%);
     margin-top: 0;
     margin-bottom: 0;

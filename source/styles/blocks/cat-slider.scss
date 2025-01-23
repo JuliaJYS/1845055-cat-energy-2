@@ -28,7 +28,7 @@
   background-color: $basic-grey;
 
   @media screen and (min-width: $tablet-width) {
-    background-image: linear-gradient(180deg, $basic-white 35%, $basic-grey 35%);
+    background-image: linear-gradient(180deg, $basic-white 152px, $basic-grey 152px);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
   border: none;
   border-radius: 2px;
   width: 4px;
-  height: 100%;
+  height: 512px;
   padding: 0;
   display: block;
   position: absolute;
@@ -87,8 +87,8 @@
     background-color: $basic-white;
     border: 2px solid $special-dark-grey;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     position: absolute;
     top: 50%;
     left: 50%;

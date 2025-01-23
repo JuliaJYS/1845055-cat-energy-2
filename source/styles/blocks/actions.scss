@@ -16,6 +16,7 @@
 
 .actions__header {
   position: relative;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -23,7 +24,9 @@
     width: 100vw;
     position: absolute;
     top: 50%;
-    left: calc(100% - 120px);
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -2;
   }
 
   &::before {
@@ -31,32 +34,42 @@
     border-bottom: 2px solid #68b738;
     width: 100vw;
     position: absolute;
-    right: calc(100% + 40px);
+    right: 0;
     top: 50%;
+    transform: translateY(-50%);
+    z-index: -2;
   }
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
     font-size: 32px;
     line-height: 32px;
-    padding-left: 70px;
+  }
+}
 
-    &::after {
-      left: calc(100% - 445px);
-    }
+.actions__header-text {
+  width: fit-content;
+  position: relative;
+  display: block;
 
-    &::before {
-      right: calc(100% - 30px);
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    right: -40px;
+    background-color: $basic-white;
+    min-height: 32px;
+    // outline: 2px solid rgba(255, 0, 0, 0.8);
+    z-index: -1;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    &::before {
-      right: calc(100% - 20px);
-    }
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 40px;
 
-    &::after {
-      left: calc(100% - 947px);
+    &::before {
+      left: 0;
     }
   }
 }

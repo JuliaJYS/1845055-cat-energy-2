@@ -5,6 +5,7 @@
 
 
   @media screen and (min-width: $tablet-width) {
+    align-items: center;
     flex-direction: row;
     padding: 0 30px;
     gap: 94px;
@@ -45,6 +46,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 708px;
+    padding-left: 0;
   }
 }
 
@@ -62,12 +64,25 @@
   }
 }
 
+.main-nav__toggle--nojs {
+  background-image: none;
+}
+
 .main-nav__toggle--close {
   background-image: url("../../icons/stack.svg#icon-x");
 }
 
 .main-nav__wrapper {
   position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 436px;
+    padding-top: 13px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 720px;
+  }
 }
 
 .main-nav__wrapper--catalog {
@@ -79,18 +94,21 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  flex-flow: column wrap;
 
 
   @media screen and (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
-    gap: 33px;
+    gap: 10px 33px;
     align-items: baseline;
+    justify-content: end;
   }
 }
 
 .main-nav__list--opened {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -105,11 +123,7 @@
 }
 
 .main-nav__list--nojs {
-  display: none;
-
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-  }
+  display: flex;
 }
 
 .main-nav__item {
@@ -162,7 +176,7 @@
 .main-nav__item-link--active {
   @media screen and (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
   }
 }
 

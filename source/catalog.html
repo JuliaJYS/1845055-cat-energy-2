@@ -29,7 +29,7 @@
               <img class="logo__logo-image" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__item-link" href="#">
+            <a class="main-nav__item-link" href="404.html">
               Подбор программы
             </a>
           </li>
@@ -337,7 +337,9 @@
       </ul>
     </section>
     <section class="sub-products">
-      <h2 class="sub-products__header catalog-subheader wrapper">Дополнительные товары</h2>
+      <h2 class="sub-products__header wrapper">
+        <span class="sub-products__header-text catalog-subheader">Дополнительные товары</span>
+      </h2>
       <div class="sub-products__content wrapper">
         <ul class="sub-products__list">
           <li class="sub-products__item">
@@ -389,7 +391,9 @@
       </div>
     </section>
     <section class="actions">
-      <h2 class="actions__header catalog-subheader wrapper">Акции и новинки</h2>
+      <h2 class="actions__header wrapper">
+        <span class="actions__header-text catalog-subheader">Акции и новинки</span>
+      </h2>
       <div class="actions_content wrapper">
         <span class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</span>
         <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -415,6 +419,7 @@
           </div>
         </div>
       </div>
+      <iframe class="contacts__map contacts__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198464!2d30.320472477840497!3d59.9387191620931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1737450356568!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
 
       <picture class="contacts__map">
         <source width="1280" height="400" type="image/png" media="(min-width: 1280px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">

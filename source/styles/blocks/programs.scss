@@ -1,5 +1,9 @@
 .programs {
   padding-top: 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .programs_wrapper {
@@ -13,6 +17,9 @@
   gap: 20px;
   flex-wrap: wrap;
 
+  @media screen and (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     flex-direction: row;
@@ -25,7 +32,7 @@
   padding: 24px 20px 19px;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 77px 53px;
+    padding: 70px 53px 60px;
   }
 }
 
@@ -67,9 +74,11 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
+    padding-top: 4px;
 
     &::before {
-      left: 69%;
+      left: 65%;
+      top: 20px;
       width: 200px;
       height: 200px;
     }
@@ -77,7 +86,8 @@
     &::after {
       width: 141px;
       height: 194px;
-      left: 74%;
+      left: 70%;
+      top: 8px;
     }
   }
 
@@ -113,10 +123,10 @@
 
   @media screen and (min-width: $tablet-width) {
     &::after {
-      width: 269px;
+      width: 273px;
       height: 113px;
-      left: 60%;
-      top: 150%;
+      left: 59%;
+      top: 158%;
     }
   }
 
@@ -142,6 +152,11 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 340px;
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    margin-bottom: 35px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -199,6 +214,11 @@
 
     &::before {
       border-top: none;
+    }
+
+    &::after {
+      top: 40%;
+      left: 123%;
     }
   }
 }

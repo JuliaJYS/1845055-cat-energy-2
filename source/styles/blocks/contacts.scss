@@ -1,7 +1,5 @@
 .contacts {
-  @media screen and (min-width: $desktop-width) {
-    position: relative;
-  }
+  position: relative;
 }
 
 .contacts--second {
@@ -22,7 +20,7 @@
 
 
   @media screen and (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 60px 40px;
     width: 100%;
   }
 
@@ -93,10 +91,18 @@
   // }
 }
 
-.contacts__map--img {
-  display: none;
-}
-
 .contacts__map--iframe {
   border: none;
+  position: absolute;
+  top: 112px;
+  left: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 198px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 0;
+  }
 }

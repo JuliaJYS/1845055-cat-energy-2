@@ -2,7 +2,7 @@
   background-color: $basic-grey;
 
   @media screen and (min-width: $tablet-width) {
-    background-image: linear-gradient(180deg, $basic-white 651px, $basic-grey 651px);
+    background-image: linear-gradient(180deg, $basic-white 620px, $basic-grey 620px);
     border-top: 1px solid $basic-grey-2;
   }
 
@@ -18,7 +18,7 @@
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 101px;
+    padding-bottom: 97px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -100,7 +100,7 @@
 
   @media screen and (min-width: $tablet-width) {
     gap: 42px;
-    padding-bottom: 99px;
+    padding-bottom: 104px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -133,7 +133,7 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    height: 77px;
+    height: 70px;
   }
 }
 
@@ -212,9 +212,10 @@
 
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
     width: 174px;
     text-align: right;
+    padding-top: 8px;
   }
 
   @media screen and (min-width: $desktop-width) {

@@ -8,9 +8,13 @@
   margin: 0;
   padding-top: 18px;
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 44px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
     padding-top: 70px;
   }
 }
@@ -24,7 +28,8 @@
 
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 156px;
+    gap: 37px 60px;
+    padding-bottom: 36px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -61,7 +66,7 @@
 
   @media screen and (min-width: $tablet-width) {
     min-height: 280px;
-    padding-top: 150px;
+    padding-top: 141px;
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
@@ -71,7 +76,7 @@
     &::before {
       width: 80px;
       height: 80px;
-      top: 40px;
+      top: 30px;
     }
 
     &::after {
@@ -80,9 +85,9 @@
       line-height: 280px;
       color: $basic-grey;
       position: absolute;
-      right: 0;
+      right: 78px;
       z-index: -1;
-      top: 0;
+      bottom: 10px;
       font-family: "Oswald", sans-serif;
     }
   }
@@ -96,6 +101,12 @@
   &::before {
     content: "";
     background-image: url("../../icons/stack.svg#icon_leaf");
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    &::after {
+      right: 100px;
+    }
   }
 }
 

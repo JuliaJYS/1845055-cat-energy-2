@@ -6,6 +6,17 @@
   position: relative;
   padding-top: 25px;
   padding-bottom: 36px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    border-bottom: 2px solid #68b738;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -2;
+  }
 
   &::after {
     content: "";
@@ -13,40 +24,40 @@
     width: 100vw;
     position: absolute;
     top: 50%;
-    left: calc(100% - 40px);
-  }
-
-  &::before {
-    content: "";
-    border-bottom: 2px solid #68b738;
-    width: 100vw;
-    position: absolute;
-    right: calc(100% + 40px);
-    top: 50%;
+    left: 0;
+    z-index: -2;
   }
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
     font-size: 32px;
     line-height: 32px;
-    padding-left: 70px;
+  }
+}
 
-    &::after {
-      left: calc(100% - 345px);
-    }
+.sub-products__header-text {
+  width: fit-content;
+  position: relative;
+  display: block;
 
-    &::before {
-      right: calc(100% - 30px);
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    right: -40px;
+    background-color: $basic-white;
+    min-height: 32px;
+    // outline: 2px solid rgba(255, 0, 0, 0.8);
+    z-index: -1;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    &::after {
-      left: calc(100% - 860px);
-    }
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 40px;
 
     &::before {
-      right: calc(100% - 20px);
+      left: 0;
     }
   }
 }
