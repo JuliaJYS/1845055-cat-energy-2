@@ -19,3 +19,10 @@
     width: 174px;
   }
 }
+
+.logo__logo-image--text {
+  @media screen and (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}

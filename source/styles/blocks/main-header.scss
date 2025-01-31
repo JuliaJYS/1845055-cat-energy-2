@@ -33,7 +33,7 @@
 .main-header--first {
   @media screen and (min-width: $desktop-width) {
     background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.png"), linear-gradient(90deg, $basic-white 50%, #3f3e41 50%);
-    background-position: center, calc(50% + 540px) center;
+    background-position: center, calc(50% + 521px) center;
     background-repeat: no-repeat;
   }
 }

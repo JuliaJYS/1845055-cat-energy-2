@@ -13,7 +13,7 @@
     border-bottom: 2px solid #68b738;
     width: 100vw;
     position: absolute;
-    top: 50%;
+    top: 41%;
     right: 0;
     z-index: -2;
   }
@@ -23,15 +23,28 @@
     border-bottom: 2px solid #68b738;
     width: 100vw;
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 0;
     z-index: -2;
   }
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 44px;
     font-size: 32px;
     line-height: 32px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+
+    &::before {
+      top: 43%;
+    }
+
+    &::after {
+      top: 43%;
+    }
   }
 }
 
@@ -55,9 +68,21 @@
 
   @media screen and (min-width: $tablet-width) {
     padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
 
     &::before {
       left: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
     }
   }
 }
@@ -87,9 +112,9 @@
 .sub-products__item {
   display: grid;
   border-bottom: 1px solid $special-grey;
-  padding-top: 10px;
-  padding-bottom: 19px;
-  gap: 10px;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  gap: 13px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 26px 38px;
@@ -99,21 +124,28 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 14px 0;
+    grid-template-columns: 1fr 285px 244px;
+    padding: 15px 0;
     width: 896px;
-    gap: 40px;
+    gap: 42px;
+    min-height: 72px;
   }
 }
 
 .sub-products__item-title {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   color: $basic-black3;
   letter-spacing: 0;
   text-align: left;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     align-self: center;
@@ -142,7 +174,7 @@
 .sub-products__actions {
   background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-mobile@1x.png");
   height: 290px;
-  margin-top: 35px;
+  margin-top: 33px;
   position: relative;
 
   &::before {
@@ -150,7 +182,7 @@
     background-image: url("../../icons/stack.svg#icon_gift");
     background-size: 78px 80px;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: center 29%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -163,7 +195,7 @@
     background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-tablet@1x.png");
 
     &::before {
-      background-position: 70px 50%;
+      background-position: 79px 50%;
     }
   }
 
@@ -181,20 +213,28 @@
 
 .sub-products__text {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .sub-products__button {
   @media screen and (min-width: $tablet-width) {
     grid-column: 1/-1;
+    padding: 10px;
   }
 
   @media screen and (min-width: $desktop-width) {
     grid-column: 3/-1;
+    width: 244px;
+    justify-self: end;
   }
 }
 
@@ -205,7 +245,7 @@
   color: $basic-white;
   letter-spacing: 0;
   text-align: center;
-  padding-top: 187px;
+  padding-top: 188px;
   padding-bottom: 43px;
   width: 161px;
   margin: 0 auto;
@@ -214,18 +254,23 @@
 
 
   @media screen and (min-width: $tablet-width) {
-    padding-top: 71px;
+    padding-top: 0;
     padding-left: 421px;
     margin: 0;
     width: 583px;
     text-align: left;
+    min-height: 142px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 9px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-top: 185px;
+    // padding-top: 185px;
+    min-height: 88%;
     padding-left: 42px;
     margin: 0;
-    width: 201px;
+    width: 204px;
     text-align: center;
   }
 }

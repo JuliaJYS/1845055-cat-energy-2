@@ -46,7 +46,7 @@
   border: none;
   border-radius: 2px;
   width: 4px;
-  height: 512px;
+  height: 258px;
   padding: 0;
   display: block;
   position: absolute;
@@ -108,5 +108,9 @@
     mask-size: 24px 18px;
     mask-position: 50%;
     mask-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    height: 512px;
   }
 }

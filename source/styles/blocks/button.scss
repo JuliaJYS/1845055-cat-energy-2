@@ -31,6 +31,7 @@
 .button--second {
   color: $special-dark-grey;
   background-color: $basic-grey;
+  margin-top: 10px;
 
   &:hover {
     background-color: $special-grey-2;
@@ -45,4 +46,5 @@
 .button--third {
   font-size: 20px;
   line-height: 26px;
+  padding: 15px;
 }

@@ -1,37 +1,49 @@
 .card {
-  padding: 20px 20px 25px;
+  padding: 22px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px 0;
+  gap: 10px 0;
   width: 320px;
   margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    height: 511px;
+    min-height: 511px;
     width: 324px;
+    padding: 22px 35px 40px;
+    gap: 22px;
   }
 
   @media screen and (min-width: $desktop-width) {
     width: 245px;
+    gap: 0;
+    min-height: 526px;
+    padding: 22px 36px 37px;
   }
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   @media screen and (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 21px;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    gap: 15px;
   }
 }
 
 .card--more {
   grid-template-columns: 1fr;
+  padding-top: 25px;
 
   @media screen and (min-width: $tablet-width) {
     margin-top: 100px;
-    height: 411px;
+    min-height: 411px;
     background-image: none;
     border: 2px solid $basic-grey;
   }
@@ -46,6 +58,12 @@
   @media screen and (min-width: $tablet-width) {
     padding-top: 20px;
     justify-content: space-between;
+    gap: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 27px;
   }
 }
 
@@ -95,10 +113,14 @@
 
   @media screen and (min-width: $tablet-width) {
     // background-size: 60px;
-    // padding-top: 50px;
+    padding-top: 25px;
     width: 170px;
 
     // background-position-y: 50%;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 13px;
   }
 }
 
@@ -110,21 +132,25 @@
 .card__table-row {
   display: flex;
   justify-content: space-between;
+  padding: 1px 0;
 
   @media screen and (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey;
-    padding: 5px 0;
+    padding: 6px 0;
   }
+
+
 }
 
 .card__table-cell {
   font-family: "Lato", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   color: $special-dark-grey;
   letter-spacing: 0;
   text-align: center;
   font-weight: 400;
+  padding: 0;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 16px;
@@ -151,7 +177,8 @@
   grid-column: 1/-1;
 
   @media screen and (min-width: $tablet-width) {
-    height: 40px;
+    min-height: 40px;
     align-self: flex-end;
+    margin-top: 5px;
   }
 }

@@ -1,16 +1,16 @@
 .actions {
   overflow-x: hidden;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 58px;
   }
 
   @media screen and (min-width: $desktop-width) {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 82px;
   }
 }
 
@@ -41,9 +41,23 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 69px;
     font-size: 32px;
     line-height: 32px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+
+    &::before {
+      top: 48%;
+    }
+
+    &::after {
+      top: 48%;
+    }
   }
 }
 
@@ -67,10 +81,29 @@
 
   @media screen and (min-width: $tablet-width) {
     padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
 
     &::before {
       left: 0;
     }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
+    }
+  }
+}
+
+.actions_content {
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -86,11 +119,12 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
-    margin: 66px 85px 68px;
+    width: 632px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin: 72px 85px 24px;
+    width: 100%;
   }
 }
 
@@ -102,16 +136,22 @@
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
     gap: 0;
+    width: 632px;
+    margin: 23px auto;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 0 234px;
+    width: 752px;
   }
 }
 
 .actions__label {
   @media screen and (min-width: $tablet-width) {
-    width: 70%;
+    width: 376px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 500px;
   }
 }
 
@@ -146,6 +186,6 @@
 
 .actions__button {
   @media screen and (min-width: $tablet-width) {
-    width: 30%;
+    width: 256px;
   }
 }

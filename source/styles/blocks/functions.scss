@@ -6,7 +6,7 @@
   text-align: left;
   font-weight: 400;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 19px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 60px;
@@ -29,12 +29,12 @@
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 37px 60px;
-    padding-bottom: 36px;
+    padding: 43px 0 36px;
   }
 
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 37px 94px;
+    gap: 37px 77px;
   }
 }
 
@@ -70,7 +70,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
-    padding-right: 80px;
+    width: 247px;
 
 
     &::before {
@@ -85,7 +85,7 @@
       line-height: 280px;
       color: $basic-grey;
       position: absolute;
-      right: 78px;
+      right: 0;
       z-index: -1;
       bottom: 10px;
       font-family: "Oswald", sans-serif;
@@ -105,7 +105,7 @@
 
   @media screen and (min-width: $tablet-width) {
     &::after {
-      right: 100px;
+      right: 22px;
     }
   }
 }

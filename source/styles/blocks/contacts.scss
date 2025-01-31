@@ -29,7 +29,8 @@
     z-index: 2;
     background-color: $basic-white;
     width: 565px;
-    top: 25%;
+    top: 23%;
+    padding: 63px 80px 61px;
     // left: 110px;
   }
 }
@@ -76,6 +77,10 @@
     text-align: end;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
