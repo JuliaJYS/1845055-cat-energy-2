@@ -9,7 +9,7 @@
     opacity: 0.8;
   }
 
-  &:focus {
+  &:focus-visible {
     opacity: 0.8;
   }
 
@@ -56,7 +56,7 @@
     background-color: $basic-green;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: $basic-green;
   }
 

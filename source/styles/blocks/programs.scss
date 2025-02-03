@@ -171,7 +171,7 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 457px;
-    height: 95px;
+    min-height: 95px;
     margin-bottom: 33px;
   }
 }

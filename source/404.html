@@ -9,7 +9,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--error">
   <header class="main-header">
     <nav class="main-nav">
       <div class="main-nav__header ">
@@ -39,12 +39,12 @@
             </a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="catalog.html">
+            <a class="main-nav__item-link " href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__item-link" href="404.html">
+            <a class="main-nav__item-link main-nav__item-link--active" href="404.html">
               Подбор программы
             </a>
           </li>
@@ -52,21 +52,11 @@
       </div>
     </nav>
   </header>
-  <h1>404</h1>
-  <p>Страница не найдена. <a href="/">Перейти на главную</a>.</p>
+  <main class="main-container wrapper">
+    <h1>404</h1>
+    <p>Страница не найдена. <a href="/">Перейти на главную</a>.</p>
+  </main>
   <footer class="main-footer ">
-    <section class="contacts contacts--second">
-      <div class="wrapper">
-        <div class="contacts__main">
-          <h3 class="contacts__header">приглашаем <br>к сотрудничеству дилеров!</h3>
-          <div class="contacts__address">
-            <span class="contacts__address-text">ул. Большая
-              Конюшенная, д. 19/8</span>
-            <span class="contacts__address-text">Санкт-Петербург</span>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="social">
       <h2 class="visually-hidden">
         Мы в сети

@@ -5,3 +5,9 @@
   font-weight: 400;
   margin: 0;
 }
+
+.page__body--error {
+  grid-template-rows: 15% 65% 20%;
+  min-height: 100vh;
+  display: grid;
+}
