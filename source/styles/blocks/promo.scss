@@ -1,46 +1,20 @@
 .promo {
-
-  // background-image: url("../../images/index-background-mobile@1x.png");
-  // background-size: 320px 302px;
-  // background-repeat: no-repeat;
-  // background-position: 50% 0;
-  // padding-top: 27px;
-  // position: relative;
-
-  // &::before {
-  //   content: "";
-  //   background-color: #68b738;
-  //   opacity: 0.7;
-  //   width: 320px;
-  //   height: 302px;
-  //   background-position: 50% 0;
-  //   background-repeat: no-repeat;
-  //   background-size: 320px 302px;
-  //   top: 0;
-  //   position: absolute;
-  //   left: 0;
-  // }
-
   position: relative;
   padding-top: 2px;
   padding-bottom: 1px;
   color: #ffffff;
   text-align: center;
-  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.5%, #ffffff 62.5%), url("../../images/index-background-mobile@1x.png"), linear-gradient(90deg, #424146, #424146);
+  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.5%, #ffffff 62.5%), url("../../images/index-background-mobile@1x.jpg"), linear-gradient(90deg, #424146, #424146);
   background-size: 100%, 320px 300px;
   background-position: top center;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-width) {
-    //  ding-top: 65px;
     padding-top: 8px;
     padding-bottom: 525px;
     color: #111111;
     text-align: left;
     background-image: none;
-    // &::before {
-    //   opacity: 0;
-    // }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -51,8 +25,6 @@
 
 .promo__content {
   @media screen and (min-width: $tablet-width) {
-    // display: flex;
-    // flex-direction: column;
     margin-left: 89px;
     margin-right: 89px;
   }
@@ -76,9 +48,6 @@
 
   @media screen and (min-width: $tablet-width) {
     color: $basic-black;
-    // width: 416px;
-    // text-align: left;
-    // padding: 0;
     position: relative;
     z-index: 5;
     margin-top: 39px;
@@ -103,7 +72,6 @@
   @media screen and (min-width: $tablet-width) {
     margin: 40px 0;
     padding: 0;
-    // text-align: left;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
@@ -149,11 +117,8 @@
 }
 
 .promo__button {
-  // height: 40px;
   padding: 10px;
-  // text-transform: uppercase;
   margin: 0;
-  // width: 280px;
   margin-top: -2px;
   margin-bottom: 2px;
 

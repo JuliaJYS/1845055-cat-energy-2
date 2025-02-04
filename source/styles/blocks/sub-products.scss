@@ -62,7 +62,6 @@
     right: -40px;
     background-color: $basic-white;
     min-height: 32px;
-    // outline: 2px solid rgba(255, 0, 0, 0.8);
     z-index: -1;
   }
 
@@ -172,7 +171,7 @@
 }
 
 .sub-products__actions {
-  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-mobile@1x.png");
+  background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 290px;
   margin-top: 33px;
@@ -193,7 +192,7 @@
   @media screen and (min-width: $tablet-width) {
     margin-top: 70px;
     min-height: 200px;
-    background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-tablet@1x.png");
+    background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-tablet@1x.jpg");
 
     &::before {
       background-position: 79px 50%;
@@ -204,7 +203,7 @@
     margin: 0;
     width: 245px;
     min-height: 288px;
-    background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-desktop@1x.png");
+    background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 100%, #ffffff), url("../../images/actions-cat-desktop@1x.jpg");
 
     &::before {
       background-position: 50% 56px;
@@ -213,7 +212,7 @@
 }
 
 .sub-products__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
@@ -223,6 +222,13 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.sub-products__text--second {
+  @media screen and (min-width: $desktop-width) {
+    width: 42px;
+    text-align: left;
   }
 }
 
@@ -240,7 +246,7 @@
 }
 
 .sub-products__actions-description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
@@ -267,7 +273,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    // padding-top: 185px;
     min-height: 88%;
     padding-left: 42px;
     margin: 0;

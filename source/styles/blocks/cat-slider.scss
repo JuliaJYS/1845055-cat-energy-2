@@ -2,7 +2,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  // background-color: $basic-white;
 
   @media screen and (min-width: $tablet-width) {
     width: 560px;
@@ -68,18 +67,15 @@
   }
 
   &:active {
-    background-color: #9ecc82; //$basic-green-2;
-    // opacity: 0.6;
+    background-color: #9ecc82;
   }
 
   &:active::before {
     border: 2px solid #9ecc82;
-    // opacity: 0.6;
   }
 
   &:active::after {
     background-color: #9ecc82;//$basic-green-2;
-    // opacity: 0.6;
   }
 
   &::before {

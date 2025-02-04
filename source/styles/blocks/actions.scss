@@ -158,7 +158,7 @@
 .actions__input {
   border: 1px solid $basic-grey-3;
   height: 56px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
@@ -175,7 +175,7 @@
   }
 
   &::placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
     text-transform: uppercase;

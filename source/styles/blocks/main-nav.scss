@@ -1,5 +1,4 @@
 .main-nav {
-  // background-color: $basic-white;
   display: flex;
   flex-direction: column;
 
@@ -153,7 +152,7 @@
 
 .main-nav__item-link {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -181,10 +180,6 @@
 .main-nav__item-link--second {
   @media screen and (min-width: $desktop-width) {
     color: $basic-white;
-
-    // &:hover {
-    //   border-bottom: 2px solid $basic-white;
-    // }
   }
 }
 
