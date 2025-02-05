@@ -25,6 +25,22 @@
   }
 }
 
+/* если делала optimize, то надо удалить fill в svg */
+.academy__logo {
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:focus-visible {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+}
+
 .academy__text {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;

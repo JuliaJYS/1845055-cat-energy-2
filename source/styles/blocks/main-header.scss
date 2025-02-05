@@ -11,5 +11,10 @@
     background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@1x.jpg"), linear-gradient(90deg, $basic-white 50%, #3f3e41 50%);
     background-position: center, calc(50% + 521px) center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(90deg, $basic-white 50%, rgb(100, 168, 59, 0.85) 50%), url("../../images/index-background-desktop@2x.jpg"), linear-gradient(90deg, $basic-white 50%, #3f3e41 50%);
+      background-size: 100%, 1041px 694px, 100%;
+    }
   }
 }

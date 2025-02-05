@@ -9,6 +9,10 @@
   background-position: top center;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(180deg, rgba(100, 168, 59, 0.85) 62.5%, #ffffff 62.5%), url("../../images/index-background-mobile@2x.jpg"), linear-gradient(90deg, #424146, #424146);
+  }
+
   @media screen and (min-width: $tablet-width) {
     padding-top: 8px;
     padding-bottom: 525px;

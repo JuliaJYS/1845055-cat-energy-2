@@ -3,15 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="CatEnergy">
   <title>Каталог продукции CatEnergy - функциональное питание для котов</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -31,7 +33,7 @@
               <img class="logo__logo-image logo__logo-image--text" src="images/logo-text-mobile.svg" alt="Логотип Заголовок" width="101" height="18">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button" title="Открыть меню">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -67,6 +69,10 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture class="card__image">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/pro500-desktop@1x.webp 1x, images/pro500-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/pro500-tablet@1x.webp 1x, images/pro500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/pro500-mobile@1x.webp 1x, images/pro500-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/pro500-desktop@1x.png 1x, images/pro500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/pro500-tablet@1x.png 1x, images/pro500-tablet@2x.png 2x">
               <img class="card__image" src="images/pro500-mobile@1x.png" srcset="images/pro500-mobile@2x.png 2x" alt="Cat Energy Pro" width="140" height="107">
@@ -104,6 +110,10 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/pro1000-desktop@1x.webp 1x, images/pro1000-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/pro1000-tablet@1x.webp 1x, images/pro1000-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/pro1000-mobile@1x.webp 1x, images/pro1000-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/pro1000-desktop@1x.png 1x, images/pro1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/pro1000-tablet@1x.png 1x, images/pro1000-tablet@2x.png 2x">
               <img class="card__image" src="images/pro1000-mobile@1x.png" srcset="images/pro1000-mobile@2x.png 2x" alt="Cat Energy Pro" width="140" height="107">
@@ -139,6 +149,10 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/pro500-2-desktop@1x.webp 1x, images/pro500-2-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/pro500-2-tablet@1x.webp 1x, images/pro500-2-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/pro500-2-mobile@1x.webp 1x, images/pro500-2-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/pro500-2-desktop@1x.png 1x, images/pro500-2-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/pro500-2-tablet@1x.png 1x, images/pro500-2-tablet@2x.png 2x">
               <img class="card__image" src="images/pro500-2-mobile@1x.png" srcset="images/pro500-2-mobile@2x.png 2x" alt="Cat Energy Pro" width="140" height="107">
@@ -177,9 +191,13 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/pro1000-2-desktop@1x.webp 1x, images/pro1000-2-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/pro1000-2-tablet@1x.webp 1x, images/pro1000-2-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/pro1000-2-mobile@1x.webp 1x, images/pro1000-2-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/pro1000-2-desktop@1x.png 1x, images/pro1000-2-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/pro1000-2-tablet@1x.png 1x, images/pro1000-2-tablet@2x.png 2x">
-              <img class="card__image" src="images/pro1000-2-mobile@1x.png" srcset="images/pro1000-2-mobile@2x.png 2x" alt="Cat Energy Pro" width="140" height="107">
+              <img class="card__image" src="images/pro1000-2-mobile@1x.png" srcset="images/pro1000-2-mobile@2x.png 2x" alt="Cat Energy Pro" loading="lazy" width="140" height="107">
             </picture>
           </a>
           <div class="card__content">
@@ -214,9 +232,13 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/slim500-desktop@1x.webp 1x, images/slim500-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/slim500-tablet@1x.webp 1x, images/slim500-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/slim500-mobile@1x.webp 1x, images/slim500-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/slim500-desktop@1x.png 1x, images/slim500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/slim500-tablet@1x.png 1x, images/slim500-tablet@2x.png 2x">
-              <img class="card__image" src="images/slim500-mobile@1x.png" srcset="images/slim500-mobile@2x.png 2x" alt="Cat Energy Slim" width="140" height="107">
+              <img class="card__image" src="images/slim500-mobile@1x.png" srcset="images/slim500-mobile@2x.png 2x" alt="Cat Energy Slim" loading="lazy" width="140" height="107">
             </picture>
           </a>
           <div class="card__content">
@@ -249,9 +271,13 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/slim1000-desktop@1x.webp 1x, images/slim1000-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/slim1000-tablet@1x.webp 1x, images/slim1000-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/slim1000-mobile@1x.webp 1x, images/slim1000-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/slim1000-desktop@1x.png 1x, images/slim1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/slim1000-tablet@1x.png 1x, images/slim1000-tablet@2x.png 2x">
-              <img class="card__image" src="images/slim1000-mobile@1x.png" srcset="images/slim1000-mobile@2x.png 2x" alt="Cat Energy Slim" width="140" height="107">
+              <img class="card__image" src="images/slim1000-mobile@1x.png" srcset="images/slim1000-mobile@2x.png 2x" alt="Cat Energy Slim" loading="lazy" width="140" height="107">
             </picture>
           </a>
           <div class="card__content">
@@ -284,9 +310,13 @@
         <li class="catalog__item card">
           <a class="card__item-link link" href="404.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="images/slim500-2-desktop@1x.webp 1x, images/slim500-2-desktop@2x.webp 2x" width="169" height="210">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/slim500-2-tablet@1x.webp 1x, images/slim500-2-tablet@2x.webp 2x" width="200" height="210">
+              <source type="image/webp" srcset="images/slim500-2-mobile@1x.webp 1x, images/slim500-2-mobile@2x.webp 2x" width="140" height="107">
+
               <source width="169" height="210" type="image/png" media="(min-width: 1280px)" srcset="images/slim500-2-desktop@1x.png 1x, images/slim500-2-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/slim500-2-tablet@1x.png 1x, images/slim500-2-tablet@2x.png 2x">
-              <img class="card__image" src="images/slim500-2-mobile@1x.png" srcset="images/slim500-2-mobile@2x.png 2x" alt="Cat Energy Slim" width="140" height="107">
+              <img class="card__image" src="images/slim500-2-mobile@1x.png" srcset="images/slim500-2-mobile@2x.png 2x" alt="Cat Energy Slim" loading="lazy" width="140" height="107">
             </picture>
           </a>
           <div class="card__content">
@@ -402,7 +432,7 @@
           <label class="actions__label">
             <input class="actions__input" name="subscribe-email" type="email" placeholder="кuklachev@gmail.com">
           </label>
-          <button class="actions__button button button--third" type="submit">
+          <button class="actions__button button button--third" type="submit" title="Подписаться">
             Подписаться
           </button>
         </form>
@@ -423,10 +453,14 @@
       </div>
       <iframe class="contacts__map contacts__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198464!2d30.320472477840497!3d59.9387191620931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1737450356568!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" title="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
 
-      <picture class="contacts__map">
+      <picture class="contacts__map contacts__map--img">
+        <source type="image/webp" media="(min-width: 1280px)" srcset="images/location-desktop@1x.webp 1x, images/location-desktop@2x.webp 2x" width="1280" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/location-tablet@1x.webp 1x, images/location-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x" width="320" height="362">
+
         <source width="1280" height="400" type="image/png" media="(min-width: 1280px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-        <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+        <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" loading="lazy" width="320" height="362">
       </picture>
     </section>
     <section class="social">
@@ -435,22 +469,21 @@
       </h2>
       <div class="social__content wrapper">
         <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-image" src="images/footer-logo.svg" alt="Логотип Заголовок" width="128" height="24">
+          <img class="main-footer__logo-image" src="images/footer-logo.svg" alt="Логотип Заголовок" loading="lazy" width="128" height="24">
         </a>
         <ul class="main-footer__list">
           <li class="main-footer__item">
-            <a class="main-footer__link main-footer__link--vk" href="https://vk.com/htmlacademy">
+            <a class="main-footer__link main-footer__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка VK">
               <span class="visually-hidden">Мы в контакте</span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link main-footer__link--youtube" href="https://youtube.com/htmlacademy">
-
+            <a class="main-footer__link main-footer__link--youtube" href="https://youtube.com/htmlacademy" aria-label="Ссылка Youtube">
               <span class="visually-hidden">Мы в youtube</span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link main-footer__link--telegram" href="https://vk.com/htmlacademy">
+            <a class="main-footer__link main-footer__link--telegram" href="https://vk.com/htmlacademy" aria-label="Ссылка Telegram">
               <span class="visually-hidden">Мы в telegram</span>
             </a>
           </li>
