@@ -85,9 +85,14 @@
 }
 
 .card__image {
-  &:hover,
-  &:active {
-    opacity: 0.8;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.7;
+    outline: none;
   }
 }
 
@@ -102,9 +107,14 @@
   width: 76px;
   margin: 0;
 
-  &:hover,
-  &:active {
+  &:hover {
     color: $basic-green;
+  }
+
+  &:active,
+  &:focus-visible {
+    color: $basic-green-2;
+    outline: none;
   }
 
   @media screen and (min-width: $tablet-width) {
