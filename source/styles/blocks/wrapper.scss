@@ -1,0 +1,16 @@
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  width: 320px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1280px;
+  }
+}

@@ -129,7 +129,7 @@
   @media screen and (min-width: $tablet-width) {
     z-index: 2;
     width: 245px;
-    height: 54px;
+    min-height: 54px;
     margin-top: 49px;
     padding: 14px 10px;
     font-size: 20px;

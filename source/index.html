@@ -19,7 +19,7 @@
 
 <body class="page__body">
   <header class="main-header main-header--first">
-    <nav class="main-nav">
+    <nav class="main-nav" data-test="header">
       <div class="main-nav__header">
         <div class="main-nav__header-wrapper wrapper">
           <a class="logo" href="index.html">
@@ -58,7 +58,7 @@
         </ul>
       </div>
     </nav>
-    <section class="promo">
+    <section class="promo" data-test="hero">
       <div class="wrapper">
         <div class="promo__content">
           <h1 class="promo__main-header">Функциональное питание для котов</h1>
@@ -82,8 +82,8 @@
     </section>
   </header>
   <main class="main-container">
-    <section class="programs">
-      <div class="programs_wrapper wrapper">
+    <section class="programs" data-test="programs">
+      <div class="programs__wrapper wrapper">
         <h2 class="visually-hidden">
           Программы контроля веса
         </h2>
@@ -109,7 +109,7 @@
         </ul>
       </div>
     </section>
-    <section class="functions wrapper">
+    <section class="functions wrapper" data-test="features">
       <h2 class="functions__header">Как это работает</h2>
       <ul class="functions__list">
         <li class="functions__item functions__item--leaf">
@@ -126,7 +126,7 @@
         </li>
       </ul>
     </section>
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__content wrapper">
         <div class="example__header ">
           <h2 class="example__subheader">Живой пример</h2>
@@ -173,7 +173,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="wrapper">
         <div class="contacts__main">
           <h3 class="contacts__header">приглашаем <br>к сотрудничеству дилеров!</h3>
@@ -195,7 +195,7 @@
         <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" loading="lazy" width="320" height="362">
       </picture>
     </section>
-    <section class=" social">
+    <section class=" social" data-test="footer">
       <h2 class="visually-hidden">
         Мы в сети
       </h2>

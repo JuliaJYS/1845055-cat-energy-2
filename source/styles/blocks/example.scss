@@ -24,7 +24,7 @@
   @media screen and (min-width: $desktop-width) {
     display: grid;
     gap: 0 220px;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-bottom: 70px;
   }
 }
@@ -121,7 +121,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 162px;
-    height: 72px;
+    min-height: 72px;
   }
 }
 
@@ -133,7 +133,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 56px;
+  min-height: 56px;
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
@@ -195,6 +195,8 @@
 
   @media screen and (min-width: $desktop-width) {
     background-color: $basic-grey;
+    max-width: 125px;
+    top: 65px;
 
     &::before {
       background-color: $basic-grey;

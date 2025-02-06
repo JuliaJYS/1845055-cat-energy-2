@@ -19,7 +19,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav" data-test="header">
       <div class="main-nav__header ">
         <div class="main-nav__header-wrapper wrapper">
           <a class="logo" href="index.html">
@@ -61,7 +61,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h1 class="catalog__header wrapper">
         Каталог продукции
       </h1>
@@ -368,7 +368,7 @@
         </li>
       </ul>
     </section>
-    <section class="sub-products">
+    <section class="sub-products" data-test="additional">
       <h2 class="sub-products__header wrapper">
         <span class="sub-products__header-text catalog-subheader">Дополнительные товары</span>
       </h2>
@@ -426,7 +426,7 @@
       <h2 class="actions__header wrapper">
         <span class="actions__header-text catalog-subheader">Акции и новинки</span>
       </h2>
-      <div class="actions_content wrapper">
+      <div class="actions__content wrapper">
         <span class="actions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</span>
         <form class="actions__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="actions__label">
@@ -440,7 +440,7 @@
     </section>
   </main>
   <footer class="main-footer ">
-    <section class="contacts contacts--second">
+    <section class="contacts contacts--second" data-test="contacts">
       <div class="wrapper">
         <div class="contacts__main">
           <h3 class="contacts__header">приглашаем <br>к сотрудничеству дилеров!</h3>
@@ -463,7 +463,7 @@
         <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" loading="lazy" width="320" height="362">
       </picture>
     </section>
-    <section class="social">
+    <section class="social" data-test="footer">
       <h2 class="visually-hidden">
         Мы в сети
       </h2>

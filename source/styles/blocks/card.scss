@@ -84,6 +84,13 @@
   }
 }
 
+.card__image {
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .card__item-title {
   font-size: 16px;
   line-height: 20px;
@@ -94,6 +101,11 @@
   font-weight: 400;
   width: 76px;
   margin: 0;
+
+  &:hover,
+  &:active {
+    color: $basic-green;
+  }
 
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;

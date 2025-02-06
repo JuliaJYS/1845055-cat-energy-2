@@ -7,7 +7,7 @@
 }
 
 .page__body--error {
-  grid-template-rows: 15% 65% 20%;
+  grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
   display: grid;
 }

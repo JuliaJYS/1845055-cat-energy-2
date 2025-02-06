@@ -100,7 +100,7 @@
   }
 }
 
-.actions_content {
+.actions__content {
   @media screen and (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
@@ -187,5 +187,6 @@
 .actions__button {
   @media screen and (min-width: $tablet-width) {
     width: 256px;
+    min-height: 56px;
   }
 }
